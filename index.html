@@ -3,43 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite José Pedro</title>
+    <title>Safari do José Pedro</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; padding: 20px; display: flex; justify-content: center; background: #e0f2fe; font-family: 'Montserrat', sans-serif; }
-        .card { background: white; width: 100%; max-width: 400px; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.15); text-align: center; border: 4px solid white; }
+        body { margin: 0; padding: 20px; display: flex; justify-content: center; background: #fef3c7; font-family: 'Montserrat', sans-serif; }
+        .card { background: white; width: 100%; max-width: 400px; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.15); text-align: center; border: 4px solid #f59e0b; }
         
-        .foto-container { width: 100%; height: 400px; background: #f1f5f9; }
+        .foto-container { width: 100%; height: 350px; background: #ecfdf5; position: relative; }
         .foto-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        
+        /* Selo de Safari */
+        .selo { position: absolute; top: 10px; right: 10px; background: #f59e0b; color: white; padding: 10px; border-radius: 50%; font-size: 0.7rem; font-weight: bold; transform: rotate(15deg); border: 2px dashed white; }
 
-        .info { padding: 30px; }
-        h1 { font-family: 'Pacifico', cursive; color: #0369a1; font-size: 3rem; margin: 10px 0; }
+        .info { padding: 30px; background-image: radial-gradient(#f1f5f9 1px, transparent 1px); background-size: 20px 20px; }
+        h1 { font-family: 'Pacifico', cursive; color: #166534; font-size: 2.8rem; margin: 5px 0; }
         
-        .caixa { background: #f0f9ff; border: 2px dashed #0ea5e9; border-radius: 20px; padding: 15px; margin: 20px 0; color: #334155; text-align: left; }
-        .caixa p { margin: 8px 0; display: flex; align-items: center; gap: 10px; }
+        .subtitulo { color: #f59e0b; font-weight: bold; letter-spacing: 3px; font-size: 0.8rem; margin: 0; }
+
+        .caixa { background: #f0fdf4; border: 2px dashed #22c55e; border-radius: 20px; padding: 15px; margin: 20px 0; color: #1e293b; text-align: left; }
+        .caixa p { margin: 10px 0; display: flex; align-items: center; gap: 12px; font-size: 0.95rem; }
         
-        .btn-wpp { background: #25d366; color: white; text-decoration: none; padding: 18px; border-radius: 50px; display: block; font-weight: bold; margin-bottom: 10px; box-shadow: 0 5px 15px rgba(37,211,102,0.3); }
-        .btn-mapa { background: #0ea5e9; color: white; text-decoration: none; padding: 15px; border-radius: 50px; display: block; font-weight: bold; font-size: 0.9rem; }
+        .btn-mapa { background: #166534; color: white; text-decoration: none; padding: 18px; border-radius: 50px; display: block; font-weight: bold; font-size: 1rem; transition: transform 0.2s; box-shadow: 0 5px 15px rgba(22,101,52,0.3); }
+        .footer-emoji { font-size: 1.5rem; margin-top: 15px; display: block; }
     </style>
 </head>
 <body>
     <div class="card">
         <div class="foto-container">
+            <div class="selo">EXPEDIÇÃO<br>ANIMAL</div>
             <img src="https://lh3.googleusercontent.com/d/1W5NYweouoBarenxGoo09S2wVEhziHn_a" alt="Foto José Pedro">
         </div>
+        
         <div class="info">
-            <p style="color: #0ea5e9; font-weight: bold; letter-spacing: 2px; margin: 0;">VOCÊ FOI CONVIDADO!</p>
+            <p class="subtitulo">CHAMADA PARA A MANADA!</p>
             <h1>José Pedro</h1>
+            <p style="color: #475569; margin-top: -10px;">Rugindo de alegria em seu aniversário!</p>
             
             <div class="caixa">
                 <p>📅 <b>Domingo, 1 de Fevereiro</b></p>
-                <p>⏰ <b>Às 13:30h</b></p>
-                <p>📍 <b>Take Kids - Shopping Praia da Costa</b></p>
-                <p style="font-size: 0.8rem; color: #64748b; margin-left: 25px;">Av. Dr. Olívio Lira, 353 - Vila Velha, ES</p>
+                <p>⏰ <b>Às 13:30h - Hora do Rugido</b></p>
+                <p>📍 <b>Take Kids (Safari Shopping)</b></p>
+                <p style="font-size: 0.8rem; color: #64748b; margin-left: 30px;">Av. Dr. Olívio Lira, 353 - Vila Velha, ES</p>
             </div>
 
-            <a href="https://wa.me/?text=Olá!%20Confirmo%20minha%20presença%20no%20aniversário%20do%20José%20Pedro!" class="btn-wpp">Confirmar no WhatsApp</a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Take+Kids+Shopping+Praia+da+Costa" target="_blank" class="btn-mapa">📍 Ver local no Mapa</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Take+Kids+Shopping+Praia+da+Costa" target="_blank" class="btn-mapa">📍 Ver local na Selva</a>
+            
+            <span class="footer-emoji">🦁 🦒 🦓 🐘</span>
         </div>
     </div>
 </body>
